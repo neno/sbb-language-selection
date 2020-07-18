@@ -1,0 +1,29 @@
+[data-module='language-selector'] button {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  line-height: 1;
+}
+
+[data-module='language-selector'] button:after {
+  content: '\00302';
+  display: inline-block;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+[data-module='language-selector'] button[aria-expanded='true']:after {
+  content: '\0030C';
+}
+
+[data-module='language-selector'] ul {
+  display: none;
+}
+
+[data-module='language-selector'] ul[aria-hidden='false'] {
+  display: inherit;
+}
+
+*:focus {
+  color: red;
+}
